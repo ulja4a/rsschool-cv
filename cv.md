@@ -31,19 +31,19 @@
 
 ## EXPERIENCE
 * ### System Administrator
-*Ministry of Emergency Situations 112*
+*Ministry of Emergency Situations 112*   
 *2020 - 2021*
 
 * ### Search Engine Marketing Specialist
-*Stroyingeenering*
+*Stroyingeenering*   
 *2011 - 2020*
 
 * ### Communications engineer
-*Caravan Telecom*
+*Caravan Telecom*   
 *2010 - 2016*
 
 * ### Communications engineer
-*Rostelecom*
+*Rostelecom*   
 *2006 - 2010*
 
 * ## CODE EXAMPLE
@@ -70,5 +70,5 @@ function testArray(a, b) {
 * SEO
 
 ## LANGUAGES
-***Russian** - *native*
+***Russian** - *native*   
 ***English** - *A1-A2*
