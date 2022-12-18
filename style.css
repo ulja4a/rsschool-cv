@@ -115,7 +115,7 @@ h1 {
     text-decoration: none;
     padding: 5px 0;
   }
-  .education-link  {
+.education-link  {
     padding: 5px 0;
     line-height: 30px;
     text-decoration: none;
@@ -168,3 +168,87 @@ h1 {
 .footer-social-rs-school {
     float: right;
 }
+.contacts-list {
+    list-style: none;
+}
+.contacts-text {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .contacts-text::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #0f0e58;
+    border-radius: 50%;
+  }
+  .contacts-link {
+    text-decoration: none;
+    color: black;
+  }
+  .contacts-line a {
+    color: black;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+.contacts-line a:hover {
+    color: #0f0e58;
+  }
+  .skills-text {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .skills-text::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #0f0e58;
+    border-radius: 50%;
+  }
+  .skills-list {
+    list-style: none;
+  }
+  .languages-text {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .languages-text::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #0f0e58;
+    border-radius: 50%;
+  }
+  .languages-list {
+    list-style: none;
+  }
+  .hobbies-text {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .hobbies-text::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #0f0e58;
+    border-radius: 50%;
+  }
+  .hobbies-list {
+    list-style: none;
+  }
