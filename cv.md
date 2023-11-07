@@ -1,5 +1,5 @@
 # Tkachenko Uliana
-![foto](https://github.com/rolling-scopes-school/ulja4a-JSFEPRESCHOOL2023Q2/assets/103379946/3bfebcc0-be60-4b61-834c-350922ac4524)
+![foto](https://github.com/ulja4a/rsschool-cv/assets/103379946/3dee4dcd-79e1-4790-ba85-2b711d86712a)
 
 ## About ME
 *Technician from school. I tried myself in different areas of life, but again and again returned to IT. I went to study for a QA tester course, studying js, learning English, and now I spend all my free time with RS-Shool*
