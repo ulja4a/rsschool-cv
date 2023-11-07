@@ -65,6 +65,7 @@ function testArray(a, b) {
 * HTML
 * CSS
 * JS(begginer)
+* GIT
 * WP
 * Postman
 * SEO
