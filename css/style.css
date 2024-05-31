@@ -1,0 +1,286 @@
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  width: 100%;
+  background-color: #000;
+  font-family: "Poppins", Roboto , sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-item {
+    padding: 14px 10px;
+  }
+
+  .nav-item a {
+    text-transform: uppercase;
+  }
+
+  .nav-item a:hover {
+    color: orange;
+  }
+
+.header__container {
+  background-color: #181717;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.header__photo {
+  width: 30%;
+  display: flex;
+  overflow: hidden
+}
+
+.header__image {
+  width: 100%
+}
+
+.nav {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  background-color: #0ed4f1;
+  font-size: 18px;
+}
+
+.nav-list {
+	width: 100%;
+  display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	}
+
+.header__content {
+  width: 70%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.header__info {
+  height: 60%;
+  display: flex;
+  padding-right: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #0ed4f1
+}
+
+.main__container {
+  display: flex;
+}
+
+.aside {
+  width: 30%;
+  padding: 30px 0 0 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #181717;
+}
+
+.section-title {
+  display: flex;
+  padding-right: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #0ed4f1;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contacts-list, .skills-list, .languages-list, .hobbies-list {
+  list-style: none;
+}
+.contacts-text {
+  position: relative;
+  padding: 0 0 30px 30px;
+}
+
+.contacts-text::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px; 
+  border: 1px solid #0ed4f1;
+  border-radius: 50%;
+}
+.contacts-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contacts-line a {
+  color: #fff;
+  text-decoration: none;  
+  transition: color 0.5s;
+}
+.contacts-line a:hover {
+  color: orange;
+}
+
+.skills-text, .languages-text, .hobbies-text {
+  padding: 0 30px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main__section {
+  width: 70%;
+  padding: 20px 30px;
+  background-color: #fff;
+  color: #000;
+  display: block;
+}
+
+.main__section-title {
+  display: flex;
+  padding-right: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #181717;
+}
+
+.summary-text, .code-example-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.experience-list {
+  margin-bottom: 20px;
+}
+
+.education-line {
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.experience-line {
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: end;
+}
+
+.code-example-text {
+  background-color: #b9b5b5;
+}
+
+.projects__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.projects__image {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #181717;
+}
+
+.projects__title {
+  text-align: center;
+  padding-top: 10px;
+}
+
+a.projects__link {
+  border: 1px solid #181717;
+}
+
+a.projects__link:hover {
+  transform: scale(1.1);
+}
+
+.footer__container {
+  width: 100%;
+  background-color: #0ed4f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.footer-section__left {
+  width: 28%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-section {
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-section__right {
+  width: 28%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-section-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+}
