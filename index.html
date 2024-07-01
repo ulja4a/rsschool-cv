@@ -31,6 +31,9 @@
               <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
             </ul>
+            <span class="hamburger">
+              <span class="hamburger__line"></span>
+            </span>
           </nav>
           <div class="header__info">
             <h1 class="section-title">Tkachenko Uliana</h1>
@@ -58,10 +61,6 @@
                   </div>
               </li>
               <li class="contacts-line">
-                  <div class="contacts-image contacts-image-discord"></div>
-                  <div class="contacts-text">Uliana Tkachenko(@ulja4a)#0281</div>
-              </li>
-              <li class="contacts-line">
                   <div class="contacts-image contacts-image-tg"></div>
                   <div class="contacts-text">
                       <a class="contacts-link" href="https://t.me/owl20130102">@owl20130102</a>
@@ -83,7 +82,7 @@
                                 <div class="skills-text">CSS</div>
                             </li>
                             <li class="skills-line">
-                                <div class="skills-text">JS(begginer)</div>
+                                <div class="skills-text">JS</div>
                             </li>
                             <li class="skills-line">
                                 <div class="skills-text">WP</div>
@@ -100,7 +99,7 @@
             <h2 class="section-title">Languages</h2>
               <ul class="languages-list">
                             <li class="languages-line">
-                                <div class="languages-text"><b>English</b> - <i>A1-A2</i></div>
+                                <div class="languages-text"><b>English</b> - <i>A2</i></div>
                             </li>
                         </ul>
           </section>
@@ -114,6 +113,33 @@
           </section>
         </aside>
         <div class="main__section">
+          <section class="section" id="contacts-mobil">
+            <h2 class="main__section-title">Contacts</h2>
+            <div class="line"></div>
+            <div class="contacts-mobil-content">
+              <div class="contacts-text-mobil">
+                <a class="contacts-link-mobil" href="tel:+38 0992664274">tel: +380992664274</a>
+              </div>
+              <div class="contacts-text-mobil">
+                <a class="contacts-link-mobil" href="mailto:ulja4a@gmail.com">e-mail: ulja4a@gmail.com</a>
+              </div>
+              <div class="contacts-text-mobil">
+                <a class="contacts-link-mobil" href="https://t.me/owl20130102">tg: @owl20130102</a>
+            </div>
+            </div>
+          </section>
+          <section class="section" id="scills-mobil">
+            <h2 class="main__section-title">Skills</h2>
+            <div class="line"></div>
+            <div class="scills-mobil-content">
+              <div class="skills-text">HTML</div>
+              <div class="skills-text">CSS</div>
+              <div class="skills-text">JS</div>
+              <div class="skills-text">WP</div>
+              <div class="skills-text">Postman</div>
+              <div class="skills-text">SEO</div>
+            </div>
+          </section>
           <section class="section" id="summary">
             <h2 class="main__section-title">About me</h2>
               <div class="line"></div>
@@ -174,18 +200,24 @@
           <section class="section" id="code-example">
             <h2 class="main__section-title">Code example</h2>
             <div class="line"></div>
+            <p>DESCRIPTION:<br>
+                <p class="code-description">Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).<br>
+                Hint: Don't forget to check for bad values like null/undefined<br></p>
+                  <p>FOR EXAMPLE,<br>
+                    <p class="code-description">let sheep = [undefined,null,false,true];</p></p><br>
               <pre class="code-example-text"><code>
-                                    function testArray(a, b) {
-                                        let sumA=0;
-                                        for (i=0; i&lt;a.length; i++){
-                                           sumA+=a[i]; 
-                                        }
-                                        let sumB=0;
-                                        for (j=0;j&lt;b.length;j++) {
-                                            sumB+=b[j];
-                                        }
-                                        return sumA+sumB;
-                                      } 
+                function countSheeps(sheep) {
+                  if (!sheep || sheep.length === 0) {
+                    return 0;
+                  }
+                  let count = 0;
+                  sheep.forEach(element => {
+                    if (element === true) {
+                      count ++;
+                    }
+                  });
+                  return count;
+                }
                         </code></pre>
           </section>
           <section class="section" id="projects">
@@ -232,11 +264,6 @@
           </div>
           <div class="footer-section">
             <p class="footer-section-text">2022-2024</p>
-          </div>
-          <div class="footer-section__right">
-            <a class="footer-section-link-rs-school" href="https://rs.school/js/" target="_blank">
-              <img src="assets/img/rs-school.png"  alt="RS-school">
-            </a>
           </div>
         </div>  
     </div>
