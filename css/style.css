@@ -316,6 +316,7 @@ code {
   position: relative;
   width: 30px;
   height: 22px;
+  cursor: pointer;
   z-index: 1001;
 }
 
