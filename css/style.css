@@ -134,19 +134,26 @@ a {
 }
 .contacts-text {
   position: relative;
-  padding: 0 0 30px 30px;
+  padding-left: 30px;
 }
 
 .contacts-text::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px; 
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #0ed4f1;
   border: 1px solid #0ed4f1;
   border-radius: 50%;
 }
+
+.contacts-line {
+  margin-bottom: 30px;
+}
+
 .contacts-link {
   text-decoration: none;
   color: #fff;
@@ -183,7 +190,7 @@ a {
   justify-content: center;
   color: #000;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 
 .line {
@@ -197,8 +204,8 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 20px;
-  text-align: justify;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .experience-list {
@@ -265,9 +272,10 @@ a.projects__link:hover {
 }
 
 .footer-section__left {
-  padding: 5px 0 0 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 
 .footer-section {
@@ -284,6 +292,24 @@ a.projects__link:hover {
   text-transform: uppercase;
 }
 
+.footer-section-link-github,
+.footer-section-link-rsschool {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-section-link-github img,
+.footer-section-link-rsschool img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 code {
   margin: 20px;
 }
@@ -297,26 +323,20 @@ code {
   position: relative;
   width: 30px;
   height: 22px;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .hamburger:before {
   top: 0;
-  left: 0;
 }
 .hamburger::after {
   bottom: 0;
-  left: 0;
-}
-
-.hamburger_close {
-  display: none;
-  position: relative;
-  width: 30px;
-  height: 22px;
 }
 
 .hamburger__line {
-  top: calc(50% - 1px);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hamburger__line,
@@ -325,10 +345,16 @@ code {
   content: "";
   display: inline-block;
   position: absolute;
+  left: 0;
   border: 1px solid #070707;
-  background: #070707;
-  height: 0px;
+  background-color: #070707;
+  height: 2px;
   width: 100%;
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease,
+    bottom 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .contacts-mobil-content {
@@ -346,17 +372,168 @@ code {
 }
 
 @media (max-width: 960px) {
+  .nav {
+    position: relative;
+    min-height: 60px;
+    padding: 0 20px;
+  }
+
   .hamburger {
     display: block;
   }
 
   .nav-list {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 360px;
+    height: 100vh;
+    padding: 90px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: #0ed4f1;
+    transition: right 0.35s ease;
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+  }
+
+  .hamburger.active::before {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active .hamburger__line {
+    opacity: 0;
+  }
+
+  .hamburger.active::after {
+    bottom: 10px;
+    transform: rotate(-45deg);
   }
 }
 
 @media (max-width: 767px) {
-  .aside {
+  code {
+        font-size: 0.7em;
+        margin: 10px;
+  }
+  
+  .profile-text {
+    font-size: 0.8rem;
+  }
+
+  h1.section-title {
+    font-size: 1.1rem;
+  }
+
+ .main__section-title,
+ h2.section-title,
+ .summary-text,
+ .education-text,
+ .experience-text,
+ .code-description,
+ .footer-section-text,
+ .projects__title,
+ .contacts-text,
+ .skills-text,
+ .languages-text,
+ .hobbies-text {
+    font-size: 0.9rem;
+ }
+
+ .contacts-text {
+    padding-left: 20px;
+ }
+
+ .contacts-line {
+  margin-bottom: 20px;
+}
+
+ .skills-text, .languages-text, .hobbies-text {
+    padding: 0 20px 10px 0;
+ }
+}
+
+@media (max-width: 680px) {
+  code {
+    margin: 5px;
+  }
+
+  .profile-text {
+    font-size: 0.7rem;
+  }
+
+  h1.section-title {
+    font-size: 1rem;
+  }
+
+ .main__section-title,
+ h2.section-title,
+ .summary-text,
+ .education-text,
+ .experience-text,
+ .code-description,
+ .footer-section-text,
+ .projects__title,
+ .contacts-text,
+ .skills-text,
+ .languages-text,
+ .hobbies-text {
+    font-size: 0.8rem;
+ }
+
+ .contacts-text {
+    padding-left: 10px;
+ }
+
+ .contacts-line {
+  margin-bottom: 10px;
+ }
+
+ .skills-text, .languages-text, .hobbies-text {
+    padding: 0 10px 5px 0;
+ }
+
+ .projects__wrapper {
+  flex-direction: column;
+  align-content: center;
+ }
+
+ .projects__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 544px) {
+ code {
+  font-size: 0.7rem;
+ }
+
+ .header__info {
+  height: 40%;
+ }
+
+ .aside {
     display: none;
   }
 
@@ -375,43 +552,77 @@ code {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
   }
 
   #contacts-mobil,
   #scills-mobil {
     display: block;
   }
-}
 
-@media (max-width: 544px) {
+  .line {
+    margin-bottom: 10px;
+  }
+
  .main__section-title,
- .section-title,
+ h2.section-title,
  .summary-text,
  .education-text,
+ .education-link,
  .experience-text,
+ .experience-link,
  .code-description,
  .footer-section-text,
- .projects__title {
-    font-size: 0.9rem;
+ .projects__title,
+ .contacts-text,
+ .skills-text,
+ .languages-text,
+ .hobbies-text {
+    font-size: 0.7rem;
  }
 
- code {
+ .main__section-title {
+  margin: 05px 0 5px;
+ }
+
+ p {
   font-size: 0.7rem;
  }
 
- .header__info {
-  height: 40%;
+ .footer-section-link-github,
+ .footer-section-link-rsschool {
+  width: 40px;
+  height: 40px;
  }
 }
 
 @media (max-width: 480px) {
-  .header__photo {
-    display: none;
-  }
-
   .header__content {
     width: 100%;
+  }
+
+  .contacts-mobil-content,
+  .scills-mobil-content,
+  .main__section-title,
+  h2.section-title,
+  .summary-text,
+  .education-text,
+  .education-link,
+  .experience-text,
+  .experience-link,
+  .code-description,
+  .footer-section-text,
+  .projects__title,
+  .contacts-text,
+  .skills-text,
+  .languages-text,
+  .hobbies-text {
+    font-size: 0.6rem;
+  }
+
+  p {
+  font-size: 0.6rem;
   }
 }
 
@@ -419,17 +630,48 @@ code {
   code {
     font-size: 0.6rem;
   }
+
+  .contacts-mobil-content,
+  .scills-mobil-content,
+  .main__section-title,
+  h2.section-title,
+  .summary-text,
+  .education-text,
+  .education-link,
+  .experience-text,
+  .experience-link,
+  .code-description,
+  .footer-section-text,
+  .projects__title,
+  .contacts-text,
+  .skills-text,
+  .languages-text,
+  .hobbies-text {
+    font-size: 0.5rem;
+  }
+
+  p {
+  font-size: 0.5rem;
+  }
 }
 
 @media (max-width: 340px) {
+  .contacts-mobil-content,
+  .scills-mobil-content,
   .main__section-title,
-  .section-title,
+  h2.section-title,
   .summary-text,
   .education-text,
+  .education-link,
   .experience-text,
+  .experience-link,
   .code-description,
   .footer-section-text,
-  .projects__title {
-    font-size: 0.7rem;
+  .projects__title,
+  .contacts-text,
+  .skills-text,
+  .languages-text,
+  .hobbies-text {
+    font-size: 0.5rem;
  }
 }
