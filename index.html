@@ -206,20 +206,21 @@
                 Hint: Don't forget to check for bad values like null/undefined</p>
                   <p>FOR EXAMPLE,</p>
                     <p class="code-description">let sheep = [undefined,null,false,true];</p>
-              <pre class="code-example-text"><code>
-                function countSheeps(sheep) {
-                  if (!sheep || sheep.length === 0) {
-                    return 0;
-                  }
-                  let count = 0;
-                  sheep.forEach(element =&gt; {
-                    if (element === true) {
-                      count ++;
-                    }
-                  });
-                  return count;
-                }
-                        </code></pre>
+              <pre class="code-example-text"><code>function countSheeps(sheep) {
+  if (!sheep || sheep.length === 0) {
+    return 0;
+  }
+
+  let count = 0;
+
+  sheep.forEach(element => {
+    if (element === true) {
+      count++;
+    }
+  });
+
+  return count;
+}</code></pre>
           </section>
           <section class="section" id="projects">
             <h2 class="main__section-title">Projects</h2>
