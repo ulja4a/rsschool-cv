@@ -6,11 +6,11 @@
 
 ## CONTACT
 
-* **Phone:** *+995595025934*
+* **Phone:** *+380992664274*
 * **Email:** *ulja4a@gmail.com*
-* **Discord name:** *Uliana Tkachenko(@ulja4a)*
+* **Discord name:** *Uliana Tkachenko(@ulyana0281)*
 * **Tg:** [*@ulja4a24*](https://t.me/ulja4a24)
-* **Location:** *Georgia, Batumi*
+* **Location:** *Ukraine*
 
 ## HOBBIES
 *Sport: run and crossfit*
