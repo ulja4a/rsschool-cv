@@ -424,7 +424,49 @@ code {
 }
 
 @media (max-width: 767px) {
-  .aside {
+
+  .profile-text {
+    font-size: 0.8rem;
+  }
+
+  h1.section-title {
+    font-size: 1.1rem;
+  }
+
+ .main__section-title,
+ h2.section-title,
+ .summary-text,
+ .education-text,
+ .experience-text,
+ .code-description,
+ .footer-section-text,
+ .projects__title,
+ .contacts-text,
+ .skills-text,
+ .languages-text,
+ .hobbies-text {
+    font-size: 0.9rem;
+ }
+
+ .contacts-text {
+    padding: 0 0 20px 20px;
+ }
+
+ .skills-text, .languages-text, .hobbies-text {
+    padding: 0 20px 10px 0;
+ }
+}
+
+@media (max-width: 544px) {
+ code {
+  font-size: 0.7rem;
+ }
+
+ .header__info {
+  height: 40%;
+ }
+
+ .aside {
     display: none;
   }
 
@@ -450,27 +492,6 @@ code {
   #scills-mobil {
     display: block;
   }
-}
-
-@media (max-width: 544px) {
- .main__section-title,
- .section-title,
- .summary-text,
- .education-text,
- .experience-text,
- .code-description,
- .footer-section-text,
- .projects__title {
-    font-size: 0.9rem;
- }
-
- code {
-  font-size: 0.7rem;
- }
-
- .header__info {
-  height: 40%;
- }
 }
 
 @media (max-width: 480px) {
