@@ -134,19 +134,26 @@ a {
 }
 .contacts-text {
   position: relative;
-  padding: 0 0 30px 30px;
+  padding-left: 30px;
 }
 
 .contacts-text::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px; 
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #0ed4f1;
   border: 1px solid #0ed4f1;
   border-radius: 50%;
 }
+
+.contacts-line {
+  margin-bottom: 30px;
+}
+
 .contacts-link {
   text-decoration: none;
   color: #fff;
@@ -449,8 +456,12 @@ code {
  }
 
  .contacts-text {
-    padding: 0 0 20px 20px;
+    padding-left: 20px;
  }
+
+ .contacts-line {
+  margin-bottom: 20px;
+}
 
  .skills-text, .languages-text, .hobbies-text {
     padding: 0 20px 10px 0;
